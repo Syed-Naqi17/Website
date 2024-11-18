@@ -1,0 +1,43 @@
+@font-face {
+    font-family: ultra;
+    src: url("GlitchGoblin-2O87v.ttf");
+}
+@font-face {
+    font-family: ultra2;
+    src: url("Pixeltype.ttf");
+}
+
+body {
+    background: #000;
+    font-family: ultra;
+}
+.typewriter {
+    font-size: 125%;
+    color: #00FF00;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #000;
+    
+}
+.typewriter > div{
+    padding: 2% 0;
+    animation: typing 3s steps(70) forwards;
+}
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    body{
+        font-size: 125%;
+        font-family: ultra2;
+    }
+    .typewriter > div{
+        padding: 8% 0;
+    }
+}
